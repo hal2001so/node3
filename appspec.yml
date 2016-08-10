@@ -2,13 +2,13 @@ version: 0.0
 os: linux
 
 files:
-  -source: files/nginx.conf
-  destination: /etc/nginx/
-  -source: files/staticserver.js
-  destination: /usr/share/nginx/html/
+  -source: files/index.html
+  destination: /var/www/html/
 
 hooks:
   BeforeInstall:
-    -source: scripts/BeforeInstall.sh
+    -location: scripts/BeforeInstall.sh
+    timeout: 120
   AfterInstall:
-    -source: scripts/AfterInstall.sh
+    -location: scripts/AfterInstall.sh
+    timeout: 120
