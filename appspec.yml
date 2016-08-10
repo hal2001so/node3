@@ -2,13 +2,13 @@ version: 0.0
 os: linux
 
 files:
-  -source: files/index.html
-  destination: /var/www/html/
+  - source: files/index.html
+    destination: /var/www/html/
 
 hooks:
   BeforeInstall:
-    -location: scripts/BeforeInstall.sh
-    timeout: 120
+    - location: scripts/BeforeInstall.sh
+      timeout: 120
   AfterInstall:
-    -location: scripts/AfterInstall.sh
-    timeout: 120
+    - location: scripts/AfterInstall.sh
+      timeout: 120
