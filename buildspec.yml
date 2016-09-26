@@ -1,11 +1,23 @@
 version:0.0
 
 containers:
-  tag:
+  main:
     phases:
-      artifacts:
-        type: zip
-	files:
-	  - 'target/appspec.yml'
-	  - 'target/files/'
-	  - 'target/scripts/'
+      install:
+        commands:
+	  - echo Entering install phase...
+      pre_build:
+      	commands:
+	  - echo Entering pre_build phase...
+      during_build:
+        commands:
+	  - Entering during_build phase...
+      post_build:
+        commands:
+	  - Entering post_build phase...
+    artifacts:
+       type: zip
+       files:
+	 - 'target/appspec.yml'
+	 - 'target/files/'
+	 - 'target/scripts/'
