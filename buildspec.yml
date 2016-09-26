@@ -1,0 +1,11 @@
+version:0.0
+
+containers:
+  tag:
+    phases:
+      artifacts:
+        type: zip
+	files:
+	  - 'target/appspec.yml'
+	  - 'target/files/'
+	  - 'target/scripts/'
