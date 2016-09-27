@@ -18,6 +18,10 @@ containers:
     artifacts:
        type: zip
        files:
-         - 'target/appspec.yml'
-         - 'target/files/'
-         - 'target/scripts/'
+         - 'appspec.yml'
+         - 'files/nginx.conf'
+         - 'files/staticserver.js'
+         - 'scripts/AfterInstall.sh'
+         - 'scripts/BeforeInstall.sh'
+         - 'scripts/install.sh'
+         - 'scripts/start.sh'
