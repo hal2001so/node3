@@ -5,19 +5,19 @@ containers:
     phases:
       install:
         commands:
-	  - echo Entering install phase...
+          - echo Entering install phase...
       pre_build:
-      	commands:
-	  - echo Entering pre_build phase...
+        commands:
+          - echo Entering pre_build phase...
       during_build:
         commands:
-	  - Entering during_build phase...
+          - Entering during_build phase...
       post_build:
         commands:
-	  - Entering post_build phase...
+          - Entering post_build phase...
     artifacts:
        type: zip
        files:
-	 - 'target/appspec.yml'
-	 - 'target/files/'
-	 - 'target/scripts/'
+         - 'target/appspec.yml'
+         - 'target/files/'
+         - 'target/scripts/'
